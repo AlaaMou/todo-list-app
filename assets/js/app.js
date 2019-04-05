@@ -64,11 +64,17 @@ var txt = 'Get It Done!';
 var speed = 200;
 function typeWriter() {
   if (i < txt.length) {
-	  
+    
+    // Using Vanilla JS 	  
     document.getElementById("quote").innerHTML += txt.charAt(i);
     i++;
+	  
+    // Using jQuery
+//     $('#quote').html(function(){
+//     	return $(this).html() + txt.charAt(i)
+//     })
      
-    // Using Vanilla JS 
+    
     setTimeout(typeWriter, speed);
   }
 };
