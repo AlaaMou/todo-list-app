@@ -1,0 +1,57 @@
+body{
+	background: #3E5151;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+color: #ffffff; /* white color for all body text*/
+}
+
+
+#main-box{
+	background: rgba(52, 58, 64);  /* Bootstrap dark color */
+	width: 30rem;
+	transition: background .5s linear;
+}
+
+
+li{
+	list-style-type: none;
+	line-height: 3rem;  /* height for each list item */
+}
+
+li:nth-of-type(odd) {
+    background: rgba(152, 58, 64, .3);
+}
+
+li:nth-of-type(even) {
+    background: rgba(152, 58, 64, .4);
+}
+
+
+li span{
+	visibility: hidden;
+	opacity: 0;
+	margin : 0 .5rem; /* adding space to trash icons */
+}
+
+
+li:hover span{
+  visibility: visible;
+  opacity: .8;
+  transition: .5s linear;
+}
+
+
+.done{
+ text-decoration: line-through;
+ color: grey;
+}
+
+@media screen and (max-width: 600px) {
+  #main-box {
+  	width: 90vw; /* 90% of view width */
+  	  }
+}
+
+
+
